@@ -13,7 +13,7 @@
 2. Create virtual environment (venv): ```<INSTALLATION_PATH>/bin/python3.7.4  -m venv <LOCAL_PATH_FOR_VIRTUAL_ENV>```
 3. Activate the venv: ```source bin/activate.csh```
 4. Install packages: ```pip install -r ./requirements.txt```
-5. Contents of the requirements.txt are in <PACKAGE>==<VERSION> syntax as follows
+5. Contents of the requirements.txt are in PACKAGE==VERSION syntax as follows
 
         pip==24.0
         scikit-learn==0.24.2
