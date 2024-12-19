@@ -24,3 +24,20 @@
         seaborn==0.11.0
 6. Use in scripts: as ```#!<LOCAL_PATH_FOR_VIRTUAL_ENV>/python/bin/python3```
    
+## Install Connect to Remote SSH Host via VS-Code
+1. Linux: Connect to a VNC machine with enough resources
+2. Linux: Update the proxy settings under $HOME/.cshrc.<username>
+3. Windows-VS-code: Install Remote-SSH extension
+4. Windows-VS-code: VSCode, File → Preferences → Settings → search for "Http:proxy" and copy the http proxy into the field
+5. Windows-VS-code: hit ctrl+shift+p > "Remote-SSH: Open SSH Configuration File". Add this to your ssh config file C:\Users\<your_username>\.ssh\config
+        Host <choose_a_host_name>
+            HostName <host_name>.<site>.domain.com
+            User <username>
+6. Linux: make symobolic links for ~/.vscode-server: ln -s <workarea>/.vscode-server  ~/.vscode-server
+7. Windows: Open powershell and run ssh-keygen -t rsa [Hit Enter, no need of password]
+8. Linux: Copy the text from C:/Users/<username>/.ssh/id_rsa.pub at the bottom of ~/.ssh/authorized_keys
+9. Windows-VS-code: Restart VSCode and hit ctrl+shift+p > "Remote SSH: Connect to Host" > Choose Linux
+10. Windows-VS-code: To update Host: Hit 'Bin' symbol on the connection terminal to stop connecting to existing server.
+11. ctrl+shift+p > "Remote-SSH: Open SSH Configuration File" > Update the host details
+12. ctrl+shift+p > "Remote SSH: Connect to Host" > Choose the new host
+    
