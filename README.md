@@ -26,11 +26,11 @@
    
 ## Install Connect to Remote SSH Host via VS-Code
 1. Linux: Connect to a VNC machine with enough resources
-2. Linux: Update the proxy settings under $HOME/.cshrc.<username>
+2. Linux: Update the proxy settings under $HOME/.cshrc.$USER
 3. Windows-VS-code: Install Remote-SSH extension
 4. Windows-VS-code: VSCode, File → Preferences → Settings → search for "Http:proxy" and copy the http proxy into the field
 5. Windows-VS-code: hit ctrl+shift+p > "Remote-SSH: Open SSH Configuration File". Add this to your ssh config file C:\Users\<your_username>\.ssh\config
-        Host <choose_a_host_name>
+        Host host_name
             HostName <host_name>.<site>.domain.com
             User <username>
 6. Linux: make symobolic links for ~/.vscode-server: ln -s <workarea>/.vscode-server  ~/.vscode-server
