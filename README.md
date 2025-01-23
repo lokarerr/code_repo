@@ -1,9 +1,9 @@
 # How-Tos
 
 ## Run C++ on VS-Code
-1. Download a windows compatible C++ Compile (for example MinGW for Windows 11)
+1. Download a windows compatible C++ compiler (for example MinGW for Windows 11)
 2. Install it locally (I installed it here: C:\MinGW\bin)
-3. Update the path in environament variables: In Search bar look for "Setup Environment Variables" -> Environment Varibles -> "Path" -> Edit -> New -> paste the installation path -> OK
+3. Update the path in environment variables: Open the Start Menu and search for "Environment Variables." Select Edit the system environment variables. -> Environment Variables -> "Path" -> Edit -> New -> paste the installation path -> OK
 4. Re-open VS-Code
 5. Install C/C++ extensions package in VS-Code
 6. Write a C++ program and run using the GUI button or Ctrl + Alt + N
